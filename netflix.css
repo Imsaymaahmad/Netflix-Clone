@@ -1,0 +1,295 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #303030;
+    color: white;
+}
+
+.head{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)), url(https://assets.nflxext.com/ffe/siteui/vlv3/2e884ce2-da1c-4501-ab9a-10c534d30975/6973a9ea-02b2-4de9-9006-d7d224c9b75d/IN-en-20230327-popsignuptwoweeks-perspective_alpha_website_medium.jpg) ;
+    background-size: 1700px;
+    background-position: 1500px 700px;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 120px;
+}
+
+.logo{
+    width: 190px;
+}
+
+nav button {
+    padding : 7px 25px;
+    background-color: #db0001;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 4px;
+    outline: 0;
+    border: #db0001;
+    margin-left: 20px;
+}
+
+.lang_btn{
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+.lang_btn img{
+    height: 9px;
+    width: 10px;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.tag{
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 600;
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+
+.watch{
+    font-weight: 400;
+    margin-bottom: 35px;
+    font-size: 30px ;
+}
+
+.ready{
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.sign_up{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5));
+    border-radius:4px;
+    border: 0.5px solid white;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    margin-bottom: 100px;
+
+}
+
+.sign_up input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    margin: 0;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.sign_up button{
+    background: #db0001;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 25px;
+    cursor:pointer;
+    padding: 15px 30px;
+    
+}
+
+.arrow{
+    height: 20px;
+    width: 20px;
+}
+
+.features{
+    font-size: 22px;
+}
+
+.row{
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    margin-top: 7px;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    padding: 100px;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.features p{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.faq{
+    padding: 10px 12%;
+    margin-top: 7px;
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    height: 970px;
+    background-color: black;
+}
+ 
+.faq h2{
+    margin-top: 30px;
+}
+
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 25px ;
+    font-size: 28px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordian .contents{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s ;
+}
+
+.accordian input[type="radio"]:checked + label + .contents{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.faq .sign_up{
+    max-width: 600px;
+    margin: 20px auto 60px;
+    margin-bottom: 50px;
+    background-color: #232323;
+}
+
+.faq small{
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.footer{
+    padding: 40px 15% 30px;
+    border-top: 6px solid #303030;
+    color: gainsboro;
+    background-color: black;
+    height: 450px;
+    width: 100%;
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    color: gainsboro;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+    height: 230px;
+    width: 900px;
+}
+
+.footer .lang_btn{
+    color: #fff;
+    padding: 7px 25px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 3px;  
+    background-color: #0d0d0d;
+    font-size: 15px;
+}
+
+.footer h3{
+    margin-top: 23px;
+    font-size: 17px;
+    color: gainsboro;
+}
